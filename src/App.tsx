@@ -45,7 +45,7 @@ export const App: React.FC = () => {
         case 'completed':
           return todo.completed;
         default:
-          return;
+          return false;
       }
     });
   }, [todos, statusFilter]);
